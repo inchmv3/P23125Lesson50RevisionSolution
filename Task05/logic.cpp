@@ -7,8 +7,29 @@
 // для работы с некорректными данными.
 #include "logic.h"
 
+
+// 0 1 2 3 4
+
+// 4 3 2 1 0
+
+// 0 .. size / 2
+
+// i = 0 --> size - 1 - 0
+// i = 1 --> size - 1 - 1
+// i = 2 --> size - 1 - 2
+
+
+
 void reverse(int array[], int size) {
-
-
+	if (size <= 0) {
+		return;
+	}
+	
+	for (int i = 0; i < size / 2; i++)
+	{
+		int t = array[i];
+		array[i] = array[size - 1 - i];
+		array[size - 1 - i] = t;
+	}
 
 }
