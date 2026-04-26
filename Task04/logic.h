@@ -5,3 +5,5 @@
 using namespace std;
 
 void swap_extrem_elements(int array[], int size);
+int search_max_element(int array[], int size);
+int search_min_element(int array[], int size);
